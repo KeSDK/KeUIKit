@@ -10,7 +10,6 @@
 
 @implementation UIView (GradientColor)
 
-    
 - (void)setGradientColors:(NSArray *)colors byDirection:(UIGradientColorDirection)direction
 {
     CAGradientLayer *gradient = [CAGradientLayer layer];
