@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface KeUILable : UILabel
+    
+@property (nonatomic, assign) UIRectCorner rectCorner;
+@property (nonatomic, strong) NSArray *gradientColors;
+
+- (void)setMaxUIWidth:(CGFloat)width;
 
 @end
