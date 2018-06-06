@@ -15,6 +15,8 @@
 		3C201B1E20C7DC520067E467 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B1D20C7DC520067E467 /* main.m */; };
 		3C201B2820C7DC530067E467 /* KeSDKProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B2720C7DC530067E467 /* KeSDKProTests.m */; };
 		3C201B3320C7DC530067E467 /* KeSDKProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B3220C7DC530067E467 /* KeSDKProUITests.m */; };
+		3C201B4320C7DF190067E467 /* KeUIKitMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B4220C7DF190067E467 /* KeUIKitMacros.m */; };
+		3C201B4620C7E06C0067E467 /* UIView+StringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B4520C7E06C0067E467 /* UIView+StringSize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		3C201B2E20C7DC530067E467 /* KeSDKProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeSDKProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C201B3220C7DC530067E467 /* KeSDKProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeSDKProUITests.m; sourceTree = "<group>"; };
 		3C201B3420C7DC530067E467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C201B4120C7DF190067E467 /* KeUIKitMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeUIKitMacros.h; sourceTree = "<group>"; };
+		3C201B4220C7DF190067E467 /* KeUIKitMacros.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeUIKitMacros.m; sourceTree = "<group>"; };
+		3C201B4420C7E06C0067E467 /* UIView+StringSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+StringSize.h"; sourceTree = "<group>"; };
+		3C201B4520C7E06C0067E467 /* UIView+StringSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+StringSize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		3C201B0D20C7DC500067E467 /* KeSDKPro */ = {
 			isa = PBXGroup;
 			children = (
+				3C201B4020C7DD970067E467 /* KeUIKit */,
 				3C201B0E20C7DC500067E467 /* AppDelegate.h */,
 				3C201B0F20C7DC500067E467 /* AppDelegate.m */,
 				3C201B1120C7DC500067E467 /* ViewController.h */,
@@ -130,6 +137,25 @@
 				3C201B3420C7DC530067E467 /* Info.plist */,
 			);
 			path = KeSDKProUITests;
+			sourceTree = "<group>";
+		};
+		3C201B4020C7DD970067E467 /* KeUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3C201B4120C7DF190067E467 /* KeUIKitMacros.h */,
+				3C201B4220C7DF190067E467 /* KeUIKitMacros.m */,
+				3C201B4420C7E06C0067E467 /* UIView+StringSize.h */,
+				3C201B4520C7E06C0067E467 /* UIView+StringSize.m */,
+				3C201B4720C7E0F70067E467 /* UIKitCategory */,
+			);
+			path = KeUIKit;
+			sourceTree = "<group>";
+		};
+		3C201B4720C7E0F70067E467 /* UIKitCategory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKitCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C201B1320C7DC500067E467 /* ViewController.m in Sources */,
+				3C201B4320C7DF190067E467 /* KeUIKitMacros.m in Sources */,
 				3C201B1E20C7DC520067E467 /* main.m in Sources */,
 				3C201B1020C7DC500067E467 /* AppDelegate.m in Sources */,
+				3C201B4620C7E06C0067E467 /* UIView+StringSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
