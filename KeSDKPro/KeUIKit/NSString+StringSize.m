@@ -19,8 +19,22 @@
     
 + (CGSize)getSizeWithContent:(NSString *)content font:(UIFont *)font width:(CGFloat)width
 {
-    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
-    return [content boundingRectWithSize:size options:NSStringDrawingTruncatesLastVisibleLine |NSStringDrawingUsesFontLeading |NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : font} context:nil].size;
+    
+    NSMutableDictionary *attrDict = [NSMutableDictionary dictionary];
+    attrDict[NSFontAttributeName] = font;
+    CGSize size = [content sizeWithAttributes:attrDict];
+    CGFloat height = size.height;
+    CGFloat mwidth = size.width;
+    if (size.width >= width) {
+        height = ceil(size.width/width) * size.height;
+        mwidth = width;
+    }
+    return CGSizeMake(mwidth, height);
+    
+//    CGSize size = CGSizeMake(width, CGFLOAT_MAX);
+//    NSMutableDictionary *attrDict = [NSMutableDictionary dictionary];
+//    attrDict[NSFontAttributeName] = font;
+//    return [content boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:attrDict context:nil].size;
 }
 
 @end
