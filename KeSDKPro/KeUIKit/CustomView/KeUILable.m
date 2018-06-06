@@ -92,7 +92,14 @@
     
 
     [self refreshUI];
+
+    
     [self.showLable setText:text];
+}
+
+- (NSString *)getText
+{
+    return self.showLable.text;
 }
     
 - (void)setLayerWithBorderWidth:(CGFloat)border andColor:(CGColorRef) color

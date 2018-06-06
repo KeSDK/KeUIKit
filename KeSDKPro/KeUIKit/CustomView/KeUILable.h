@@ -32,6 +32,7 @@ typedef NS_OPTIONS(NSUInteger, UIGradientColorDirection)
                             direction:(UIGradientColorDirection)direction;
 - (void)setMaxUIWidth:(CGFloat)width;
 - (void)setText:(NSString *)text;
+- (NSString *)getText;
 - (void)setLayerWithBorderWidth:(CGFloat)border andColor:(CGColorRef) color;
 
 @end
