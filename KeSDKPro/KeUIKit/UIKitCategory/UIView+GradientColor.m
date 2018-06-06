@@ -8,9 +8,17 @@
 
 #import "UIView+GradientColor.h"
 
+typedef NS_OPTIONS(NSUInteger, UIGradientColorDirection)
+{
+    UIGradientColorDirectionLeftToRight,
+    UIGradientColorDirectionRightToLeft,
+    UIGradientColorDirectionTopToBottom,
+    UIGradientColorDirectionBottomToTop
+};
+
 @implementation UIView (GradientColor)
 
-- (void)setGradientColors:(NSArray *)colors byDirection:(UIGradientColorDirection)direction
+- (void)setGradientColors:(NSArray *)colors byDirection:(NSUInteger)direction
 {
     CAGradientLayer *gradient = [CAGradientLayer layer];
     gradient.frame = self.bounds;
