@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_OPTIONS(NSUInteger, UIGradientColorDirection)
+{
+    UIGradientColorDirectionLeftToRight,
+    UIGradientColorDirectionRightToLeft,
+    UIGradientColorDirectionTopToBottom,
+    UIGradientColorDirectionBottomToTop
+};
+
 @interface UIView (GradientColor)
+    
+- (void)setGradientColors:(NSArray *)colors byDirection:(UIGradientColorDirection)direction;
 
 @end
