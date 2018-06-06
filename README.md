@@ -1,12 +1,15 @@
 # KeUIKit
-About Custom UI tool
+About some custom UIs tool. 
+
 
 ## KeUILable
 可自动根据字体改变大小的UILable
+
 ### KeUILable简介
 - 支持自定义lable圆角
 - 支持背景渐变
 - 支持根据content，自动化调整lable大小。
+
 ### 使用 例：
 ```
 - (IBAction)click:(id)sender
