@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C201B1020C7DC500067E467 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B0F20C7DC500067E467 /* AppDelegate.m */; };
+		3C201B1320C7DC500067E467 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B1220C7DC500067E467 /* ViewController.m */; };
+		3C201B1620C7DC500067E467 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C201B1420C7DC500067E467 /* Main.storyboard */; };
+		3C201B1820C7DC520067E467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C201B1720C7DC520067E467 /* Assets.xcassets */; };
+		3C201B1B20C7DC520067E467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C201B1920C7DC520067E467 /* LaunchScreen.storyboard */; };
+		3C201B1E20C7DC520067E467 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B1D20C7DC520067E467 /* main.m */; };
+		3C201B2820C7DC530067E467 /* KeSDKProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B2720C7DC530067E467 /* KeSDKProTests.m */; };
+		3C201B3320C7DC530067E467 /* KeSDKProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B3220C7DC530067E467 /* KeSDKProUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C201B2420C7DC530067E467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C201B0320C7DC500067E467 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C201B0A20C7DC500067E467;
+			remoteInfo = KeSDKPro;
+		};
+		3C201B2F20C7DC530067E467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C201B0320C7DC500067E467 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C201B0A20C7DC500067E467;
+			remoteInfo = KeSDKPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C201B0B20C7DC500067E467 /* KeSDKPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeSDKPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C201B0E20C7DC500067E467 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C201B0F20C7DC500067E467 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3C201B1120C7DC500067E467 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3C201B1220C7DC500067E467 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3C201B1520C7DC500067E467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C201B1720C7DC520067E467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C201B1A20C7DC520067E467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C201B1C20C7DC520067E467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C201B1D20C7DC520067E467 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C201B2320C7DC530067E467 /* KeSDKProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeSDKProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C201B2720C7DC530067E467 /* KeSDKProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeSDKProTests.m; sourceTree = "<group>"; };
+		3C201B2920C7DC530067E467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C201B2E20C7DC530067E467 /* KeSDKProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeSDKProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C201B3220C7DC530067E467 /* KeSDKProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeSDKProUITests.m; sourceTree = "<group>"; };
+		3C201B3420C7DC530067E467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C201B0820C7DC500067E467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C201B2020C7DC530067E467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C201B2B20C7DC530067E467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C201B0220C7DC500067E467 = {
+			isa = PBXGroup;
+			children = (
+				3C201B0D20C7DC500067E467 /* KeSDKPro */,
+				3C201B2620C7DC530067E467 /* KeSDKProTests */,
+				3C201B3120C7DC530067E467 /* KeSDKProUITests */,
+				3C201B0C20C7DC500067E467 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C201B0C20C7DC500067E467 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C201B0B20C7DC500067E467 /* KeSDKPro.app */,
+				3C201B2320C7DC530067E467 /* KeSDKProTests.xctest */,
+				3C201B2E20C7DC530067E467 /* KeSDKProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C201B0D20C7DC500067E467 /* KeSDKPro */ = {
+			isa = PBXGroup;
+			children = (
+				3C201B0E20C7DC500067E467 /* AppDelegate.h */,
+				3C201B0F20C7DC500067E467 /* AppDelegate.m */,
+				3C201B1120C7DC500067E467 /* ViewController.h */,
+				3C201B1220C7DC500067E467 /* ViewController.m */,
+				3C201B1420C7DC500067E467 /* Main.storyboard */,
+				3C201B1720C7DC520067E467 /* Assets.xcassets */,
+				3C201B1920C7DC520067E467 /* LaunchScreen.storyboard */,
+				3C201B1C20C7DC520067E467 /* Info.plist */,
+				3C201B1D20C7DC520067E467 /* main.m */,
+			);
+			path = KeSDKPro;
+			sourceTree = "<group>";
+		};
+		3C201B2620C7DC530067E467 /* KeSDKProTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C201B2720C7DC530067E467 /* KeSDKProTests.m */,
+				3C201B2920C7DC530067E467 /* Info.plist */,
+			);
+			path = KeSDKProTests;
+			sourceTree = "<group>";
+		};
+		3C201B3120C7DC530067E467 /* KeSDKProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C201B3220C7DC530067E467 /* KeSDKProUITests.m */,
+				3C201B3420C7DC530067E467 /* Info.plist */,
+			);
+			path = KeSDKProUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C201B0A20C7DC500067E467 /* KeSDKPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C201B3720C7DC530067E467 /* Build configuration list for PBXNativeTarget "KeSDKPro" */;
+			buildPhases = (
+				3C201B0720C7DC500067E467 /* Sources */,
+				3C201B0820C7DC500067E467 /* Frameworks */,
+				3C201B0920C7DC500067E467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeSDKPro;
+			productName = KeSDKPro;
+			productReference = 3C201B0B20C7DC500067E467 /* KeSDKPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C201B2220C7DC530067E467 /* KeSDKProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C201B3A20C7DC530067E467 /* Build configuration list for PBXNativeTarget "KeSDKProTests" */;
+			buildPhases = (
+				3C201B1F20C7DC530067E467 /* Sources */,
+				3C201B2020C7DC530067E467 /* Frameworks */,
+				3C201B2120C7DC530067E467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C201B2520C7DC530067E467 /* PBXTargetDependency */,
+			);
+			name = KeSDKProTests;
+			productName = KeSDKProTests;
+			productReference = 3C201B2320C7DC530067E467 /* KeSDKProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C201B2D20C7DC530067E467 /* KeSDKProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C201B3D20C7DC530067E467 /* Build configuration list for PBXNativeTarget "KeSDKProUITests" */;
+			buildPhases = (
+				3C201B2A20C7DC530067E467 /* Sources */,
+				3C201B2B20C7DC530067E467 /* Frameworks */,
+				3C201B2C20C7DC530067E467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C201B3020C7DC530067E467 /* PBXTargetDependency */,
+			);
+			name = KeSDKProUITests;
+			productName = KeSDKProUITests;
+			productReference = 3C201B2E20C7DC530067E467 /* KeSDKProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C201B0320C7DC500067E467 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "柯建芳";
+				TargetAttributes = {
+					3C201B0A20C7DC500067E467 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					3C201B2220C7DC530067E467 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 3C201B0A20C7DC500067E467;
+					};
+					3C201B2D20C7DC530067E467 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 3C201B0A20C7DC500067E467;
+					};
+				};
+			};
+			buildConfigurationList = 3C201B0620C7DC500067E467 /* Build configuration list for PBXProject "KeSDKPro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C201B0220C7DC500067E467;
+			productRefGroup = 3C201B0C20C7DC500067E467 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C201B0A20C7DC500067E467 /* KeSDKPro */,
+				3C201B2220C7DC530067E467 /* KeSDKProTests */,
+				3C201B2D20C7DC530067E467 /* KeSDKProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C201B0920C7DC500067E467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C201B1B20C7DC520067E467 /* LaunchScreen.storyboard in Resources */,
+				3C201B1820C7DC520067E467 /* Assets.xcassets in Resources */,
+				3C201B1620C7DC500067E467 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C201B2120C7DC530067E467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C201B2C20C7DC530067E467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C201B0720C7DC500067E467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C201B1320C7DC500067E467 /* ViewController.m in Sources */,
+				3C201B1E20C7DC520067E467 /* main.m in Sources */,
+				3C201B1020C7DC500067E467 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C201B1F20C7DC530067E467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C201B2820C7DC530067E467 /* KeSDKProTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C201B2A20C7DC530067E467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C201B3320C7DC530067E467 /* KeSDKProUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C201B2520C7DC530067E467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C201B0A20C7DC500067E467 /* KeSDKPro */;
+			targetProxy = 3C201B2420C7DC530067E467 /* PBXContainerItemProxy */;
+		};
+		3C201B3020C7DC530067E467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C201B0A20C7DC500067E467 /* KeSDKPro */;
+			targetProxy = 3C201B2F20C7DC530067E467 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C201B1420C7DC500067E467 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C201B1520C7DC500067E467 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C201B1920C7DC520067E467 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C201B1A20C7DC520067E467 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C201B3520C7DC530067E467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3C201B3620C7DC530067E467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C201B3820C7DC530067E467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6Y674Y5K;
+				INFOPLIST_FILE = KeSDKPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kesion.KeSDKPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C201B3920C7DC530067E467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6Y674Y5K;
+				INFOPLIST_FILE = KeSDKPro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kesion.KeSDKPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C201B3B20C7DC530067E467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6Y674Y5K;
+				INFOPLIST_FILE = KeSDKProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kesion.KeSDKProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeSDKPro.app/KeSDKPro";
+			};
+			name = Debug;
+		};
+		3C201B3C20C7DC530067E467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6Y674Y5K;
+				INFOPLIST_FILE = KeSDKProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kesion.KeSDKProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeSDKPro.app/KeSDKPro";
+			};
+			name = Release;
+		};
+		3C201B3E20C7DC530067E467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6Y674Y5K;
+				INFOPLIST_FILE = KeSDKProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kesion.KeSDKProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeSDKPro;
+			};
+			name = Debug;
+		};
+		3C201B3F20C7DC530067E467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3G6Y674Y5K;
+				INFOPLIST_FILE = KeSDKProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kesion.KeSDKProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeSDKPro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C201B0620C7DC500067E467 /* Build configuration list for PBXProject "KeSDKPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C201B3520C7DC530067E467 /* Debug */,
+				3C201B3620C7DC530067E467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C201B3720C7DC530067E467 /* Build configuration list for PBXNativeTarget "KeSDKPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C201B3820C7DC530067E467 /* Debug */,
+				3C201B3920C7DC530067E467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C201B3A20C7DC530067E467 /* Build configuration list for PBXNativeTarget "KeSDKProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C201B3B20C7DC530067E467 /* Debug */,
+				3C201B3C20C7DC530067E467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C201B3D20C7DC530067E467 /* Build configuration list for PBXNativeTarget "KeSDKProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C201B3E20C7DC530067E467 /* Debug */,
+				3C201B3F20C7DC530067E467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C201B0320C7DC500067E467 /* Project object */;
+}
