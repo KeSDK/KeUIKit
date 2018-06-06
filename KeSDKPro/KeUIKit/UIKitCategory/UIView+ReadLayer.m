@@ -10,4 +10,24 @@
 
 @implementation UIView (ReadLayer)
 
+- (CGFloat)getOriginX
+{
+    return self.frame.origin.x;
+}
+    
+- (CGFloat)getOriginY
+{
+    return self.frame.origin.y;
+}
+    
+- (CGFloat)getSizeWidth
+{
+    return self.frame.size.width;
+}
+    
+- (CGFloat)getSizeHeight
+{
+    return self.frame.size.height;
+}
+    
 @end

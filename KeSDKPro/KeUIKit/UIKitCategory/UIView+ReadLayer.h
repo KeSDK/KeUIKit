@@ -10,4 +10,9 @@
 
 @interface UIView (ReadLayer)
 
+- (CGFloat)getOriginX;
+- (CGFloat)getOriginY;
+- (CGFloat)getSizeWidth;
+- (CGFloat)getSizeHeight;
+    
 @end
