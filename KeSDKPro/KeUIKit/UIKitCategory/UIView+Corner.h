@@ -10,6 +10,6 @@
 
 @interface UIView (Corner)
     
-- (void)cornerWithSize:(CGSize)size byRoundingCorners:(UIRectCorner)corners;
+- (void)setCornerWithSize:(CGSize)size byRoundingCorners:(UIRectCorner)corners;
 
 @end
