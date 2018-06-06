@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UILable (AddContentInsets)
+@interface UILabel (AddContentInsets)
 
 @property (nonatomic, assign) UIEdgeInsets yf_contentInsets;
     
