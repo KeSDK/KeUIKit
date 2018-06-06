@@ -12,10 +12,10 @@
 #import "NSString+StringSize.h"
 
 #define kUILableMARGIN 12
-#define kCornerSize 12
 
 @interface KeUILable ()
 
+@property (nonatomic, strong) UILabel *showLable;
 @property (nonatomic, strong) CAShapeLayer *maskLayer;
 @property (nonatomic, strong) CAGradientLayer *gradient;
 
@@ -31,11 +31,12 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        maxWidth = [UIScreen mainScreen].bounds.size.width - 50;
-        [self setLayerWithBorderWidth:1.0f andColor:HEXCOLOR(0xFFB100).CGColor];
-        insets = UIEdgeInsetsMake(kUILableMARGIN, kUILableMARGIN, kUILableMARGIN, kUILableMARGIN);
 
         // set defaut config
+        [self baseConfig];
+       
+        [self setLayerWithBorderWidth:1.0f andColor:HEXCOLOR(0xFFB100).CGColor];
+
         self.cornerSize = CGSizeMake(kCornerSize, kCornerSize);
 
         self.rectCorner = UIRectCornerTopRight | UIRectCornerBottomLeft | UIRectCornerBottomRight;
@@ -49,7 +50,34 @@
     }
     return self;
 }
+    
+- (instancetype)initKeUILableWithFrame:(CGRect)frame
+                                  text:(NSString *)text
+                            RectCorner:(UIRectCorner)rectCorner
+                            cornerSize:(CGSize)cornerSize
+                        gradientColors:(NSArray *)gradientColors
+                             direction:(UIGradientColorDirection)direction
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self baseConfig];
+        self.rectCorner = rectCorner;
+        self.cornerSize = cornerSize;
+        self.gradientColors = gradientColors;
+        self.direction = direction;
+        [self addSubview:self.showLable];
+        [self setText:text];
+    }
+    return self;
+}
 
+    
+- (void)baseConfig
+{
+    maxWidth = [UIScreen mainScreen].bounds.size.width - 50;
+    insets = UIEdgeInsetsMake(kUILableMARGIN, kUILableMARGIN, kUILableMARGIN, kUILableMARGIN);
+}
+    
 - (void)setMaxUIWidth:(CGFloat)width
 {
     maxWidth = width;
