@@ -14,12 +14,13 @@
 #import "NSString+StringSize.h"
 #import "UILabel+AddContentInsets.h"
 
-#define kUILableMARGIN 12
+#define kUILableMARGIN 8
 #define kCornerSize 12
 
 @implementation KeUILable
 {
     CGFloat maxWidth;
+    UIEdgeInsets insets;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -29,20 +30,23 @@
         maxWidth = [UIScreen mainScreen].bounds.size.width - 50;
         self.layer.borderWidth = 1.0f;
         self.layer.borderColor = HEXCOLOR(0xFFB100).CGColor;
-        self.rectCorner = UIRectCornerTopLeft | UIRectCornerBottomLeft | UIRectCornerBottomRight;
+        insets = UIEdgeInsetsMake(kUILableMARGIN, kUILableMARGIN, kUILableMARGIN, kUILableMARGIN);
+
+
+
+        self.rectCorner = UIRectCornerTopRight | UIRectCornerBottomLeft | UIRectCornerBottomRight;
         self.gradientColors = [NSArray arrayWithObjects:
                                (id)HEXACOLOR(0xFFD000, 1.0).CGColor,
                                (id)HEXACOLOR(0xFFA000, 1.0).CGColor,
                                nil];
-
-        self.yf_contentInsets = UIEdgeInsetsMake(kUILableMARGIN, kUILableMARGIN, kUILableMARGIN, kUILableMARGIN);
+        [self addSubview:self.showLable];
     }
     return self;
 }
     
 - (void)refreshGradientColors
 {
-    [self setGradientColors:self.gradientColors byDirection:UIGradientColorDirectionLeftToRight];
+    [self setGradientColors:self.gradientColors byDirection:UIGradientColorDirectionRightToLeft];
 }
 
 - (void)refreshRectCorner
@@ -60,7 +64,7 @@
 - (void)setGradientColors:(NSArray *)gradientColors
 {
     _gradientColors = gradientColors;
-    [self setGradientColors:gradientColors byDirection:UIGradientColorDirectionLeftToRight];
+    [self setGradientColors:gradientColors byDirection:UIGradientColorDirectionRightToLeft];
 }
 
 - (void)setRectCorner:(UIRectCorner)rectCorner
@@ -71,16 +75,32 @@
     
 - (void)setText:(NSString *)text
 {
-    CGSize size = [NSString getSizeWithContent:text font:self.font width:maxWidth];
+    CGSize size = [NSString getSizeWithContent:text font:self.showLable.font width:maxWidth];
 
-    self.frame = CGRectMake(self.getOriginX, self.getOriginY, size.width + kUILableMARGIN * 2, size.height + kUILableMARGIN * 2);
+    self.frame = CGRectMake(self.getOriginX, self.getOriginY, size.width + kUILableMARGIN * 2, size.height  + kUILableMARGIN * 2);
+    self.showLable.frame = CGRectMake(self.showLable.getOriginX, self.showLable.getOriginY, size.width, size.height);
+    
     [self.layer setNeedsLayout];
     [self.layer layoutIfNeeded];
 
     [self refreshGradientColors];
     [self refreshRectCorner];
-    [super setText:text];
+    [self addSubview:self.showLable];
+    [self.showLable setText:text];
 }
 
+#pragma mark - get
+
+- (UILabel *)showLable
+{
+    if (!_showLable) {
+        _showLable = [[UILabel alloc] initWithFrame:CGRectMake(insets.left, insets.top, 0, 0)];
+        _showLable.numberOfLines = 0;
+        _showLable.lineBreakMode = NSLineBreakByCharWrapping;
+
+        _showLable.text = @"dssss";
+    }
+    return _showLable;
+}
 
 @end

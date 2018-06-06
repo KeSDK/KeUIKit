@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KeUILable : UILabel
+@interface KeUILable : UIView
     
+@property (nonatomic, strong) UILabel *showLable;
 @property (nonatomic, assign) UIRectCorner rectCorner;
 @property (nonatomic, strong) NSArray *gradientColors;
 
 - (void)setMaxUIWidth:(CGFloat)width;
+- (void)setText:(NSString *)text;
 
 @end
