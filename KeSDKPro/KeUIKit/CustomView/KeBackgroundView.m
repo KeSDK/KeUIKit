@@ -172,7 +172,7 @@
     if (self.layerPath) {
         maskPath = self.layerPath;
     } else {
-       [UIBezierPath bezierPathWithRoundedRect:bounds byRoundingCorners:self.rectCorner cornerRadii:self.cornerSize];
+        maskPath = [UIBezierPath bezierPathWithRoundedRect:bounds byRoundingCorners:self.rectCorner cornerRadii:self.cornerSize];
     }
     self.maskLayer.frame = bounds;
     self.maskLayer.path = maskPath.CGPath;
