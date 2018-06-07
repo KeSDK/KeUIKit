@@ -2,6 +2,23 @@
 About some custom UIs tool. 
 
 
+## KeBackgroundView
+可用于当任何控件的背景。
+- 支持背景渐变色，及渐变方向。
+- 支持自定义背景圆角方向及大小。
+- 支持设置以内容view为相对对象的内距。
+- 支持背景根据内容（view）及内距，改变自己的大小。
+
+### 基本使用
+``` oc
+// 设置内容view
+- (void)setContentView:(UIView *)contentView;
+// 当改变内容view的size时候，需要刷新
+- (void)refreshUI;
+// 设置内距
+self.insets = UIEdgeInsetsMake(kUILableMARGIN, kUILableMARGIN, kUILableMARGIN, kUILableMARGIN);
+```
+
 ## KeUILable
 可自动根据字体改变大小的UILable
 
