@@ -11,7 +11,7 @@ About some custom UIs tool.
 - 支持根据content，自动化调整lable大小。
 
 ### 使用 例：
-```
+``` Objective-C
 - (IBAction)click:(id)sender
 {
     KeUILable *keLable = [[KeUILable alloc] initWithFrame:CGRectMake(20, 20, 100, 40)];
