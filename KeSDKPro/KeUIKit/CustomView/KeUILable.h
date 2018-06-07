@@ -7,22 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KeBackgroundView.h"
 
-#define kCornerSize 12
-typedef NS_OPTIONS(NSUInteger, UIGradientColorDirection)
-{
-    UIGradientColorDirectionLeftToRight,
-    UIGradientColorDirectionRightToLeft,
-    UIGradientColorDirectionTopToBottom,
-    UIGradientColorDirectionBottomToTop
-};
 
-@interface KeUILable : UIView
-    
-@property (nonatomic, assign) UIRectCorner rectCorner;
-@property (nonatomic, assign) CGSize cornerSize;
-@property (nonatomic, strong) NSArray *gradientColors;
-@property (nonatomic, assign) UIGradientColorDirection direction;
+@interface KeUILable : KeBackgroundView
 
 - (instancetype)initKeUILableWithFrame:(CGRect)frame
                                   text:(NSString *)text
@@ -33,6 +21,5 @@ typedef NS_OPTIONS(NSUInteger, UIGradientColorDirection)
 - (void)setMaxUIWidth:(CGFloat)width;
 - (void)setText:(NSString *)text;
 - (NSString *)getText;
-- (void)setLayerWithBorderWidth:(CGFloat)border andColor:(CGColorRef) color;
 
 @end
