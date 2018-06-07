@@ -60,3 +60,27 @@ self.insets = UIEdgeInsetsMake(kUILableMARGIN, kUILableMARGIN, kUILableMARGIN, k
 
 ### 演示
 ![](https://github.com/KeSDK/KeUIKit/blob/master/IMG_3724.GIF)
+
+
+## KeUILoadingView
+一个带有动画效果的加载提示。
+
+### 简介
+- 提供设置加载圈颜色，可自动进行渐变。
+- 提供可设置加载圈的边框大小。
+- 提供开始动画及结束动画。
+
+### 用法
+``` oc
+    LV = [[KeUILoadingView alloc] initWithFrame:CGRectMake(20, 300, 100, 100)];
+    [self.view addSubview:LV];
+    [LV startAnimation];
+    
+    [LV stopAnimation]; // 停止动画
+```
+
+### 演示
+![](https://github.com/KeSDK/KeUIKit/blob/master/loadingpic.png)
+
+
+
