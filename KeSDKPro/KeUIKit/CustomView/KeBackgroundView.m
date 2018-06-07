@@ -9,10 +9,10 @@
 #import "KeBackgroundView.h"
 
 @interface KeBackgroundView ()
-    
-@property (nonatomic, strong) UILabel *showLable;
+
 @property (nonatomic, strong) CAShapeLayer *maskLayer;
 @property (nonatomic, strong) CAGradientLayer *gradient;
+@property (nonatomic, strong) UIView *contentView;
     
 @end;
 

@@ -28,7 +28,6 @@ typedef NS_OPTIONS(NSUInteger, UIGradientColorDirection)
 @property (nonatomic, strong) NSArray *gradientColors;
 @property (nonatomic, assign) UIGradientColorDirection direction;
 @property (nonatomic, assign) UIEdgeInsets insets;
-@property (nonatomic, strong) UIView *contentView;
 
 - (instancetype)initKeUILableWithFrame:(CGRect)frame
                             RectCorner:(UIRectCorner)rectCorner
