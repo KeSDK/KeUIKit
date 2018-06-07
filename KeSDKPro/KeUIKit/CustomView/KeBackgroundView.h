@@ -36,6 +36,7 @@ typedef NS_OPTIONS(NSUInteger, UIGradientColorDirection)
                         gradientColors:(NSArray *)gradientColors
                              direction:(UIGradientColorDirection)direction;
 - (void)setContentView:(UIView *)contentView;
+- (void)setSingleColor:(UIColor *)color;
 - (void)setContentSize:(CGSize)size;
 - (void)setLayerWithBorderWidth:(CGFloat)border andColor:(CGColorRef) color;
 - (void)refreshUI;

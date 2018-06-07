@@ -76,6 +76,14 @@
     [self addSubview:contentView];
     _contentView = contentView;
 }
+
+- (void)setSingleColor:(UIColor *)color
+{
+    self.gradientColors = [NSArray arrayWithObjects:
+                           (id)color.CGColor,
+                           (id)color.CGColor,
+                           nil];
+}
     
 - (void)setContentSize:(CGSize)size
 {
