@@ -13,6 +13,7 @@
 @property (nonatomic, strong) CAShapeLayer *maskLayer;
 @property (nonatomic, strong) CAGradientLayer *gradient;
 @property (nonatomic, strong) UIView *contentView;
+@property (nonatomic, strong) UIBezierPath *layerPath;
     
 @end;
 
@@ -85,15 +86,15 @@
                            nil];
 }
     
-- (void)setContentSize:(CGSize)size
-{
-    contentSize = size;
-}
-
 - (void)setLayerWithBorderWidth:(CGFloat)border andColor:(CGColorRef) color
 {
     self.layer.borderWidth = border;
     self.layer.borderColor = color;
+}
+    
+- (void)configLayerShapeByBezierPath:(UIBezierPath *)path
+{
+    self.layerPath = path;
 }
 
 - (void)refreshUI
@@ -167,7 +168,12 @@
         self.maskLayer = [CAShapeLayer layer];
     }
     CGRect bounds = self.bounds;
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:bounds byRoundingCorners:self.rectCorner cornerRadii:self.cornerSize];
+    UIBezierPath *maskPath = nil;
+    if (self.layerPath) {
+        maskPath = self.layerPath;
+    } else {
+       [UIBezierPath bezierPathWithRoundedRect:bounds byRoundingCorners:self.rectCorner cornerRadii:self.cornerSize];
+    }
     self.maskLayer.frame = bounds;
     self.maskLayer.path = maskPath.CGPath;
     self.layer.mask = self.maskLayer;
