@@ -23,6 +23,7 @@
 		3C201B5820C803770067E467 /* KeUILable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B5720C803770067E467 /* KeUILable.m */; };
 		3C201B5B20C815460067E467 /* UILabel+AddContentInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B5A20C815460067E467 /* UILabel+AddContentInsets.m */; };
 		3C201B5E20C904B30067E467 /* KeBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B5D20C904B30067E467 /* KeBackgroundView.m */; };
+		3C201B6120C934FF0067E467 /* KeUILoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B6020C934FF0067E467 /* KeUILoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		3C201B5A20C815460067E467 /* UILabel+AddContentInsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AddContentInsets.m"; sourceTree = "<group>"; };
 		3C201B5C20C904B30067E467 /* KeBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeBackgroundView.h; sourceTree = "<group>"; };
 		3C201B5D20C904B30067E467 /* KeBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeBackgroundView.m; sourceTree = "<group>"; };
+		3C201B5F20C934FF0067E467 /* KeUILoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeUILoadingView.h; sourceTree = "<group>"; };
+		3C201B6020C934FF0067E467 /* KeUILoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeUILoadingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +195,8 @@
 				3C201B5D20C904B30067E467 /* KeBackgroundView.m */,
 				3C201B5620C803770067E467 /* KeUILable.h */,
 				3C201B5720C803770067E467 /* KeUILable.m */,
+				3C201B5F20C934FF0067E467 /* KeUILoadingView.h */,
+				3C201B6020C934FF0067E467 /* KeUILoadingView.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				3C201B1320C7DC500067E467 /* ViewController.m in Sources */,
 				3C201B4A20C7F3760067E467 /* UIView+Corner.m in Sources */,
 				3C201B4320C7DF190067E467 /* KeUIKitMacros.m in Sources */,
+				3C201B6120C934FF0067E467 /* KeUILoadingView.m in Sources */,
 				3C201B4D20C7F4810067E467 /* UIView+GradientColor.m in Sources */,
 				3C201B5B20C815460067E467 /* UILabel+AddContentInsets.m in Sources */,
 				3C201B5E20C904B30067E467 /* KeBackgroundView.m in Sources */,

@@ -11,6 +11,7 @@
 #import "UIView+Corner.h"
 #import "UIView+GradientColor.h"
 #import "KeUIKitMacros.h"
+#import "KeUILoadingView.h"
 
 @interface ViewController ()
     
@@ -19,6 +20,10 @@
 @end
 
 @implementation ViewController
+{
+    KeUILoadingView *LV;
+}
+    
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -74,10 +79,17 @@
                                                           direction:UIGradientColorDirectionRightToLeft];
     [self.view addSubview:keLable3];
 
+    
+    LV = [[KeUILoadingView alloc] initWithFrame:CGRectMake(20, 300, 100, 100)];
+    [self.view addSubview:LV];
+   //
+    LV.loadingContentColor = 0xff78f3;
+    [LV startAnimation];
 }
     
 - (IBAction)add:(id)sender
 {
+    [LV stopAnimation];
     [self.keLable4 setText:[[self.keLable4 getText] stringByAppendingString:@"哈哈ddada"]];
 }
 
