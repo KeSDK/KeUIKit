@@ -21,7 +21,7 @@ self.insets = UIEdgeInsetsMake(kUILableMARGIN, kUILableMARGIN, kUILableMARGIN, k
 ```
 
 ## KeUILable
-可自动根据字体改变大小的UILable
+可自动根据字体改变大小的UILable，继承自 KeBackgroundView
 
 ### KeUILable简介
 - 支持自定义lable圆角
