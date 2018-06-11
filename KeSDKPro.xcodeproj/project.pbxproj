@@ -24,6 +24,14 @@
 		3C201B5B20C815460067E467 /* UILabel+AddContentInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B5A20C815460067E467 /* UILabel+AddContentInsets.m */; };
 		3C201B5E20C904B30067E467 /* KeBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B5D20C904B30067E467 /* KeBackgroundView.m */; };
 		3C201B6120C934FF0067E467 /* KeUILoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B6020C934FF0067E467 /* KeUILoadingView.m */; };
+		3C201B6820CBAF9E0067E467 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B6720CBAF9E0067E467 /* MyTableViewCell.m */; };
+		3C201B6E20CBB9220067E467 /* KeChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B6D20CBB9220067E467 /* KeChatViewController.m */; };
+		3C201B7120CBB9D10067E467 /* KeChatContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B7020CBB9D10067E467 /* KeChatContent.m */; };
+		3C201B7420CBC5560067E467 /* KeChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B7320CBC5560067E467 /* KeChatTableViewCell.m */; };
+		3C201B7720CD1C080067E467 /* KeChatConast.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B7620CD1C080067E467 /* KeChatConast.m */; };
+		3C201B7B20CD1DA00067E467 /* KeChatEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B7A20CD1DA00067E467 /* KeChatEvent.m */; };
+		3C201B7F20CD24B00067E467 /* KeChatCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B7E20CD24B00067E467 /* KeChatCache.m */; };
+		3C201B8220CD25B10067E467 /* KeChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C201B8120CD25B10067E467 /* KeChatManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +86,23 @@
 		3C201B5D20C904B30067E467 /* KeBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeBackgroundView.m; sourceTree = "<group>"; };
 		3C201B5F20C934FF0067E467 /* KeUILoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeUILoadingView.h; sourceTree = "<group>"; };
 		3C201B6020C934FF0067E467 /* KeUILoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeUILoadingView.m; sourceTree = "<group>"; };
+		3C201B6620CBAF9E0067E467 /* MyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		3C201B6720CBAF9E0067E467 /* MyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
+		3C201B6C20CBB9220067E467 /* KeChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeChatViewController.h; sourceTree = "<group>"; };
+		3C201B6D20CBB9220067E467 /* KeChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeChatViewController.m; sourceTree = "<group>"; };
+		3C201B6F20CBB9D10067E467 /* KeChatContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeChatContent.h; sourceTree = "<group>"; };
+		3C201B7020CBB9D10067E467 /* KeChatContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeChatContent.m; sourceTree = "<group>"; };
+		3C201B7220CBC5560067E467 /* KeChatTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeChatTableViewCell.h; sourceTree = "<group>"; };
+		3C201B7320CBC5560067E467 /* KeChatTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeChatTableViewCell.m; sourceTree = "<group>"; };
+		3C201B7520CD1C080067E467 /* KeChatConast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeChatConast.h; sourceTree = "<group>"; };
+		3C201B7620CD1C080067E467 /* KeChatConast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeChatConast.m; sourceTree = "<group>"; };
+		3C201B7920CD1DA00067E467 /* KeChatEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeChatEvent.h; sourceTree = "<group>"; };
+		3C201B7A20CD1DA00067E467 /* KeChatEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeChatEvent.m; sourceTree = "<group>"; };
+		3C201B7D20CD24B00067E467 /* KeChatCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeChatCache.h; sourceTree = "<group>"; };
+		3C201B7E20CD24B00067E467 /* KeChatCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeChatCache.m; sourceTree = "<group>"; };
+		3C201B8020CD25B10067E467 /* KeChatManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeChatManager.h; sourceTree = "<group>"; };
+		3C201B8120CD25B10067E467 /* KeChatManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeChatManager.m; sourceTree = "<group>"; };
+		3C201B8320CD32F70067E467 /* KeChatEventConast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeChatEventConast.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +163,8 @@
 				3C201B1920C7DC520067E467 /* LaunchScreen.storyboard */,
 				3C201B1C20C7DC520067E467 /* Info.plist */,
 				3C201B1D20C7DC520067E467 /* main.m */,
+				3C201B6620CBAF9E0067E467 /* MyTableViewCell.h */,
+				3C201B6720CBAF9E0067E467 /* MyTableViewCell.m */,
 			);
 			path = KeSDKPro;
 			sourceTree = "<group>";
@@ -168,6 +195,7 @@
 				3C201B4420C7E06C0067E467 /* NSString+StringSize.h */,
 				3C201B4520C7E06C0067E467 /* NSString+StringSize.m */,
 				3C201B4E20C7F81E0067E467 /* CustomView */,
+				3C201B6520CA58BC0067E467 /* CustomController */,
 				3C201B4720C7E0F70067E467 /* UIKitCategory */,
 			);
 			path = KeUIKit;
@@ -199,6 +227,68 @@
 				3C201B6020C934FF0067E467 /* KeUILoadingView.m */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		3C201B6520CA58BC0067E467 /* CustomController */ = {
+			isa = PBXGroup;
+			children = (
+				3C201B6920CBB89D0067E467 /* KeChatController */,
+			);
+			path = CustomController;
+			sourceTree = "<group>";
+		};
+		3C201B6920CBB89D0067E467 /* KeChatController */ = {
+			isa = PBXGroup;
+			children = (
+				3C201B6C20CBB9220067E467 /* KeChatViewController.h */,
+				3C201B6D20CBB9220067E467 /* KeChatViewController.m */,
+				3C201B7520CD1C080067E467 /* KeChatConast.h */,
+				3C201B7620CD1C080067E467 /* KeChatConast.m */,
+				3C201B8020CD25B10067E467 /* KeChatManager.h */,
+				3C201B8120CD25B10067E467 /* KeChatManager.m */,
+				3C201B7C20CD24830067E467 /* Cache */,
+				3C201B7820CD1D380067E467 /* Event */,
+				3C201B6B20CBB8CE0067E467 /* CellContent */,
+				3C201B6A20CBB8B30067E467 /* CellView */,
+			);
+			path = KeChatController;
+			sourceTree = "<group>";
+		};
+		3C201B6A20CBB8B30067E467 /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				3C201B7220CBC5560067E467 /* KeChatTableViewCell.h */,
+				3C201B7320CBC5560067E467 /* KeChatTableViewCell.m */,
+			);
+			path = CellView;
+			sourceTree = "<group>";
+		};
+		3C201B6B20CBB8CE0067E467 /* CellContent */ = {
+			isa = PBXGroup;
+			children = (
+				3C201B6F20CBB9D10067E467 /* KeChatContent.h */,
+				3C201B7020CBB9D10067E467 /* KeChatContent.m */,
+			);
+			path = CellContent;
+			sourceTree = "<group>";
+		};
+		3C201B7820CD1D380067E467 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				3C201B8320CD32F70067E467 /* KeChatEventConast.h */,
+				3C201B7920CD1DA00067E467 /* KeChatEvent.h */,
+				3C201B7A20CD1DA00067E467 /* KeChatEvent.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		3C201B7C20CD24830067E467 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				3C201B7D20CD24B00067E467 /* KeChatCache.h */,
+				3C201B7E20CD24B00067E467 /* KeChatCache.m */,
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,15 +421,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C201B7720CD1C080067E467 /* KeChatConast.m in Sources */,
+				3C201B6E20CBB9220067E467 /* KeChatViewController.m in Sources */,
 				3C201B1320C7DC500067E467 /* ViewController.m in Sources */,
 				3C201B4A20C7F3760067E467 /* UIView+Corner.m in Sources */,
+				3C201B7420CBC5560067E467 /* KeChatTableViewCell.m in Sources */,
 				3C201B4320C7DF190067E467 /* KeUIKitMacros.m in Sources */,
 				3C201B6120C934FF0067E467 /* KeUILoadingView.m in Sources */,
 				3C201B4D20C7F4810067E467 /* UIView+GradientColor.m in Sources */,
 				3C201B5B20C815460067E467 /* UILabel+AddContentInsets.m in Sources */,
+				3C201B8220CD25B10067E467 /* KeChatManager.m in Sources */,
 				3C201B5E20C904B30067E467 /* KeBackgroundView.m in Sources */,
 				3C201B1E20C7DC520067E467 /* main.m in Sources */,
+				3C201B7F20CD24B00067E467 /* KeChatCache.m in Sources */,
 				3C201B1020C7DC500067E467 /* AppDelegate.m in Sources */,
+				3C201B7B20CD1DA00067E467 /* KeChatEvent.m in Sources */,
+				3C201B6820CBAF9E0067E467 /* MyTableViewCell.m in Sources */,
+				3C201B7120CBB9D10067E467 /* KeChatContent.m in Sources */,
 				3C201B5820C803770067E467 /* KeUILable.m in Sources */,
 				3C201B4620C7E06C0067E467 /* NSString+StringSize.m in Sources */,
 				3C201B5520C800CA0067E467 /* UIView+ReadLayer.m in Sources */,
