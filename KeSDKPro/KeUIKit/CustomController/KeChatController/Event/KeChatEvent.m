@@ -10,12 +10,10 @@
 
 @implementation KeChatEvent
     
-+ (instancetype)eventWithContent:(KeChatContent *)content currentController:(UIViewController *)currentController indexPath:(NSIndexPath *)indexPath userInfo:(NSDictionary *)userInfo
++ (instancetype)eventWithContent:(KeChatContent *)content userInfo:(NSDictionary *)userInfo
 {
     KeChatEvent *event = [[KeChatEvent alloc] init];
     event.content = content;
-    event.currentController = currentController;
-    event.indexPath = indexPath;
     event.userInfo = userInfo;
     return event;
 }

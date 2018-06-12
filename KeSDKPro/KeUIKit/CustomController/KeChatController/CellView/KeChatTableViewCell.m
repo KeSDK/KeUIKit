@@ -12,7 +12,7 @@
 
 - (instancetype)initWithMessageType:(KeMessageType)messageType
 {
-    NSString *reuseId = [[self class] getreuseIdWithMessageType:&messageType];
+    NSString *reuseId = [[self class] getreuseIdWithMessageType:messageType];
     self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseId];
     if (self) {
         
@@ -20,7 +20,19 @@
     return self;
 }
 
-+ (NSString *)getreuseIdWithMessageType:(KeMessageType *)type
+- (void)postEventByKey:(NSString *)key withEventInfo:(KeChatEvent *)eventInfo
+{
+    if (self.eventDelegate && [self.eventDelegate respondsToSelector:@selector(getEventBlockWithKey:)]) {
+        keChatEventBlock block = [self.eventDelegate getEventBlockWithKey:key];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            block([eventInfo copy]);
+        });
+    }
+}
+
+#pragma mark class method
+
++ (NSString *)getreuseIdWithMessageType:(KeMessageType)type
 {
     return [NSString stringWithFormat:@"%@%ld", NSStringFromClass([self class]), (long)type];
 }

@@ -8,15 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "KeChatContent.h"
+#import "KeChatEvent.h"
+
 
 #define KeChatDefaultCellHeight 12
 
 @interface KeChatTableViewCell : UITableViewCell
 
-+ (NSString *)getreuseIdWithMessageType:(KeMessageType *)type;
+@property (nonatomic, weak) id<KeChatEventDelegate> eventDelegate;
+
++ (NSString *)getreuseIdWithMessageType:(KeMessageType)type;
 + (CGFloat)getHeightByContent:(KeChatContent *)content;
 
 - (instancetype)initWithMessageType:(KeMessageType)messageType;
-//- (void)registene
+- (void)postEventByKey:(NSString *)key withEventInfo:(KeChatEvent *)eventInfo;
+
 
 @end

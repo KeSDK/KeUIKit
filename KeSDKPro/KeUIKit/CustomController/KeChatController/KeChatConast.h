@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KeChatEvent.h"
 #import "KeChatEventConast.h"
+
 
 @interface KeChatConast : NSObject
 

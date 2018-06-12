@@ -10,13 +10,23 @@
 #import <UIKit/UIKit.h>
 #import "KeChatContent.h"
 
+@class KeChatEvent;
+
+typedef void(^keChatEventBlock)(KeChatEvent *event);
+
+@protocol KeChatEventDelegate <NSObject>
+
+- (void)registerEventWithKey:(NSString *)key forBlock:(keChatEventBlock)block;
+- (void)cancelBlockEventByKey:(NSString *)key;
+- (keChatEventBlock)getEventBlockWithKey:(NSString *)key;
+
+@end
+
 @interface KeChatEvent : NSObject
 
 @property (nonatomic, strong) KeChatContent *content;
-@property (nonatomic, weak) UIViewController *currentController;
-@property (nonatomic, strong) NSIndexPath *indexPath;
 @property (nonatomic, strong) NSDictionary *userInfo;
     
-+ (instancetype)eventWithContent:(KeChatContent *)content currentController:(UIViewController *)currentController indexPath:(NSIndexPath *)indexPath userInfo:(NSDictionary *)userInfo;
++ (instancetype)eventWithContent:(KeChatContent *)content userInfo:(NSDictionary *)userInfo;
 
 @end
