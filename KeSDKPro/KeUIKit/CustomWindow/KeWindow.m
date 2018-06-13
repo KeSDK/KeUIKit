@@ -42,6 +42,7 @@
     self = [self initWithFrame:frame];
     if (self) {
         self.rootViewController = rootViewController;
+        self.contentView = rootViewController.view;
     }
     return self;
 }

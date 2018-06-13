@@ -14,8 +14,8 @@
 - (instancetype)initWindowWithFrame:(CGRect)frame rootViewController:(UIViewController *)rootViewController;
 
 - (void)setContentView:(UIView *)view;
-- (void)destoryWindow;
 - (void)showWindow;
 - (void)hiddenWindow;
+- (void)destoryWindow;
 
 @end
