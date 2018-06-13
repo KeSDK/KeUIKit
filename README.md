@@ -83,5 +83,34 @@ self.insets = UIEdgeInsetsMake(kUILableMARGIN, kUILableMARGIN, kUILableMARGIN, k
 ### 演示
 ![](https://github.com/KeSDK/KeUIKit/blob/master/loadingpic.png)
 
+## KeWindow
+用于于针对任何view，controller，制定个上最层窗口。
+
+## KeDrapWindow
+用于针对任何view，controller，制定个上最层悬浮窗口，支持拖拽。
+## 使用 eg:
+``` oc
+    UIView *view = [[UIView alloc] init];
+    view.backgroundColor = UIColor.whiteColor;
+    self.drapWindow = [[KeDrapWindow alloc] initDrapWindowWithFrame:CGRectMake(20, 60, 80, 150) ContentView:view];
+
+    UIView *view2 = [[UIView alloc] init];
+    view2.backgroundColor = UIColor.blueColor;
+    UIButton *btview2 = [[UIButton alloc] initWithFrame:CGRectMake(0 , 0, 80, 80)];
+    [btview2 setTitle:@"click" forState:UIControlStateNormal];
+    [btview2 setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    [btview2 addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+    [view2 addSubview:btview2];
+    self.drapWindow2 = [[KeDrapWindow alloc] initDrapWindowWithFrame:CGRectMake(200, 60, 80, 150) ContentView:view2];
+    [self.drapWindow2 setclickedWindow:^{
+        NSLog(@"drapWindow2");
+    }];
+    
+    MmViewController *vc = [[MmViewController alloc] init];
+    self.drapWindow3 = [[KeDrapWindow alloc] initWindowWithFrame:CGRectMake(200, 300, 80, 150)  rootViewController:vc];
+    
+```
+### 演示结果
+![](https://github.com/KeSDK/KeUIKit/blob/dev/drap.png)
 
 
