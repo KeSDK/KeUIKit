@@ -60,6 +60,7 @@
                               nil];
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
     gradientLayer.shadowPath = bezierPath.CGPath;
+    NSLog(@"%f %f",self.getSizeWidth, self.getSizeHeight);
     gradientLayer.frame = CGRectMake(0, 0, self.getSizeWidth, self.getSizeHeight/2);
     gradientLayer.startPoint = CGPointMake(0, 0.5);
     gradientLayer.endPoint = CGPointMake(1, 0.5);
