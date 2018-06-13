@@ -72,7 +72,7 @@ self.insets = UIEdgeInsetsMake(kUILableMARGIN, kUILableMARGIN, kUILableMARGIN, k
 - 提供开始动画及结束动画。
 
 ### 用法
-``` oc
+``` Objective-C
     LV = [[KeUILoadingView alloc] initWithFrame:CGRectMake(20, 300, 100, 100)];
     [self.view addSubview:LV];
     [LV startAnimation];
@@ -89,7 +89,7 @@ self.insets = UIEdgeInsetsMake(kUILableMARGIN, kUILableMARGIN, kUILableMARGIN, k
 ## KeDrapWindow
 用于针对任何view，controller，制定个上最层悬浮窗口，支持拖拽。
 ## 使用 eg:
-``` oc
+``` Objective-C
     UIView *view = [[UIView alloc] init];
     view.backgroundColor = UIColor.whiteColor;
     self.drapWindow = [[KeDrapWindow alloc] initDrapWindowWithFrame:CGRectMake(20, 60, 80, 150) ContentView:view];
