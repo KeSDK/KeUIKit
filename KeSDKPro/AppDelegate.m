@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "KeDrapWindow.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(20, 60, 80, 150)];
+//    view.backgroundColor = UIColor.grayColor;
+//    KeDrapWindow *window = [[KeDrapWindow alloc] initDrapWindowWithFrame:CGRectMake(20, 60, 80, 150) ContentView:view];
+
+
     return YES;
 }
 

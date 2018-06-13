@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KeDragWindow : UIWindow
+@interface KeWindow : UIWindow
 
 - (instancetype)initWindowWithFrame:(CGRect)frame ContentView:(UIView *)view;
+- (instancetype)initWindowWithFrame:(CGRect)frame rootViewController:(UIViewController *)rootViewController;
+
+- (void)setContentView:(UIView *)view;
+- (void)destoryWindow;
+- (void)showWindow;
+- (void)hiddenWindow;
 
 @end

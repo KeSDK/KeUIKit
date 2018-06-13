@@ -14,6 +14,8 @@
 #import "KeUILoadingView.h"
 #import "KeUIKitMacros.h"
 #import "MyTableViewCell.h"
+#import "KeDrapWindow.h"
+#import "MmViewController.h"
 
 #define LoadingCount 10
 
@@ -21,6 +23,9 @@
     
 @property (nonatomic, strong) KeUILable *keLable4;
 @property (nonatomic, strong) NSMutableArray *list;
+@property (nonatomic, strong) KeDrapWindow *drapWindow;
+@property (nonatomic, strong) KeDrapWindow *drapWindow2;
+@property (nonatomic, strong) KeDrapWindow *drapWindow3;
     
 @end
 
@@ -35,6 +40,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIView *view = [[UIView alloc] init];
+    view.backgroundColor = UIColor.whiteColor;
+    self.drapWindow = [[KeDrapWindow alloc] initDrapWindowWithFrame:CGRectMake(20, 60, 80, 150) ContentView:view];
+
+    UIView *view2 = [[UIView alloc] init];
+    view2.backgroundColor = UIColor.blueColor;
+    UIButton *btview2 = [[UIButton alloc] initWithFrame:CGRectMake(0 , 0, 80, 80)];
+    [btview2 setTitle:@"click" forState:UIControlStateNormal];
+    [btview2 setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    [btview2 addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+    [view2 addSubview:btview2];
+    
+    self.drapWindow2 = [[KeDrapWindow alloc] initDrapWindowWithFrame:CGRectMake(200, 60, 80, 150) ContentView:view2];
+    [self.drapWindow2 setclickedWindow:^{
+        NSLog(@"drapWindow2");
+    }];
+    
+    
+    MmViewController *vc = [[MmViewController alloc] init];
+   // vc.view.frame = CGRectMake(200, 300, 80, 150) ;
+    self.drapWindow3 = [[KeDrapWindow alloc] initWindowWithFrame:CGRectMake(200, 300, 80, 150)  rootViewController:vc];
+    
+    
     self.list = [[NSMutableArray alloc] init];
     
     for (NSInteger i=LoadingCount; i > 0; --i)
@@ -81,6 +110,8 @@
 //                                                               nil]
 //                                                    direction:UIGradientColorDirectionRightToLeft];
 //    [self.view addSubview:self.keLable4];
+    
+
 }
     
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -147,10 +178,16 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIView *view = [[UIView alloc] init];
+    view.backgroundColor = UIColor.redColor;
+    [self.drapWindow setContentView:view];
+}
 
 - (IBAction)click:(id)sender
 {
-    tb.tableHeaderView = nil;
+//    tb.tableHeaderView = nil;
 //    KeUILable *keLable = [[KeUILable alloc] initWithFrame:CGRectMake(20, 20, 100, 40)];
 //    [self.view addSubview:keLable];
 //    [keLable setText:@"课kadalwdhlahwdlhadwhallnanashdlahdlhdahahdlhdanwknqnwwqqwewhdladhlahwdlldaldjaljdahwdlahwdhalwdhalwhdawkdhawhdlahwdlhawhdlkkk"];
@@ -176,9 +213,11 @@
 //    [self.view addSubview:keLable3];
 //
 //
-//    LV = [[KeUILoadingView alloc] initWithFrame:CGRectMake(20, 300, 100, 100)];
-//    [self.view addSubview:LV];
-//    [LV startAnimation];
+    if (!LV) {
+        LV = [[KeUILoadingView alloc] initWithFrame:CGRectMake(20, 300, 100, 100)];
+        [self.view addSubview:LV];
+    }
+    [LV startAnimation];
 }
     
 - (IBAction)add:(id)sender
